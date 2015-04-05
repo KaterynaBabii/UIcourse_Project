@@ -1,0 +1,383 @@
+/* =======================================================
+   General
+   ======================================================= */
+body {
+    font-family: "Quattrocento",serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrap {
+    min-height: 100%;
+    margin: 0 auto 0;
+}
+
+a{
+    color: #b1845d;
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
+}
+p {
+    color: #5f5f5f;
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+/* =======================================================
+   Section header
+   ======================================================= */
+.section-header{
+   text-align: center;
+}
+.section-header h1 {
+   color: #648e80;
+    font-family: "Oswald",sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-top: 70px;
+    text-transform: uppercase;
+}
+.small-header {
+    color: #648e80;
+    font-family: "Oswald",sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-top: 70px;
+}
+.section-header h1 span {
+    position: relative;
+}
+.section-header h1 span::before,
+.section-header h1 span::after{
+    top: 13px;
+    border-bottom: 2px solid grey;
+    content: "";
+    position: absolute;
+    width: 70px;
+}
+.section-header h1 span::after{
+    right: -80px;
+}
+.section-header h1 span::before{
+    left: -80px;
+}
+.section-header .header-desc{
+    color: #5f5f5f;
+    font-family: "Quattrocento",serif;
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: center;
+}
+ 
+/* =======================================================
+   Header and Main navigation
+   ======================================================= */
+header{
+    width:100%;
+}
+.navbar-header{
+    font-family: cczoinks;
+    font-size: 30px;
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
+    color: #648e80;
+    line-height: 30px; 
+}
+.navbar {
+    width:100%;
+    font: 18px/30px "Helvetica",sans-serif;
+    top: 0px; 
+    left: 0px;
+    background: none repeat scroll 0 0 white;
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 0;
+}
+.main-nav {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0;
+}
+.main-nav ul {
+    list-style: outside none none;
+}
+.main-nav ul li {
+    position: relative;
+    margin-left: 25px;
+    padding-bottom: 5px;
+}
+.main-nav ul li a{
+    padding: 0;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color:#18817d;
+}
+.main-nav .active {
+    /*border-bottom: 2px solid #18817d;*/
+
+}
+
+
+/* =======================================================
+   Slider
+   ======================================================= */
+
+.main-slider img{
+    background-size: cover;
+    width: 100%;
+    -webkit-filter: brightness(0.3);  
+    filter: brightness(0.3);
+;      
+}
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+}
+.carousel-caption{
+    text-align: center;
+    top: 20%;
+}
+.carousel-indicators{
+    top:45%;
+}
+ .carousel-caption h3{
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #000000;
+    text-transform: uppercase;
+    
+}
+ .carousel-caption p{
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 2px #000000;
+      
+}
+/* =======================================================
+   Filter item:church, musem and restaurant
+   ======================================================= */
+#lvivItems {
+    display: block;
+}
+.lvivItems-filter {
+    font: 13px "Montserrat";
+    text-align: center;
+    text-transform: uppercase;
+    margin:20px 0px;
+}
+.lvivItems-filter #filters li {
+    display: inline-block;
+    margin-right: 20px;
+}
+#lvivItems .item {
+    display: none;
+    opacity: 0;
+    height: auto;
+    margin-bottom: 25px;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    -moz-box-sizing: border-box;
+}
+#lvivItems .item img {
+  padding: 3px;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.55);
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.55);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.55);
+}
+#lvivItems h2 {
+    margin-top: 5px;
+    text-shadow: none;
+}
+.view p {
+    position: relative;
+    color: #fff;
+    padding: 10px 20px 10px;
+    color: #333;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+        transform: scale(0);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+.view {
+    cursor: default;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 0 3px #ddd;
+}
+.view .mask, .view .content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view img {
+    display: block;
+    position: relative;
+    left: 10px;
+    margin-left: -10px;
+    position: relative;
+    -webkit-transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.view:hover > img {
+    -webkit-transform: scale(2) rotate(10deg);
+    -moz-transform: scale(2) rotate(10deg);
+    -o-transform: scale(2) rotate(10deg);
+    -ms-transform: scale(2) rotate(10deg);
+    transform: scale(2) rotate(10deg);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=30)";
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 22px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 20px 0 0 0;
+    text-shadow: none;
+    color: #333;
+    margin: 20px 40px 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.view:hover h2,
+.view:hover p{
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/* =======================================================
+   History - paralax
+   ======================================================= */
+#historyLviv {
+    background-image: url("../img/pl-rynok.png");
+    text-align: center;
+    color:white;
+}
+.parallax {
+    background-attachment: fixed;
+    background-size: cover;
+}
+.showcase {
+    background: url("../img/lviv.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+/*    -webkit-filter: brightness(0.3); -moz-filter: brightness(0.3); -o-filter: brightness(0.3); -ms-filter: brightness(0.3); filter: brightness(0.3);
+*/    padding: 20px 0;
+    background-size: cover;
+}
+.showcase-content-left p,
+.showcase-content-left h4 {
+    text-align: right;
+}
+.showcase-box{
+    position: relative;
+    top: 25px;
+}
+.showcase-content{
+    margin:25px 0px;
+}
+.showcase-content h4{
+    color:white;
+    font-weight: bold;
+}
+.showcase-content p{
+    color:white;
+}
+/* =======================================================
+  Lviv Legend
+   ======================================================= */
+
+.progress {
+    box-shadow: none;
+    height: 33px;
+    margin-bottom: 15px;
+    
+}
+.progress-bar {
+    width: 100%;
+     background-color: #648e80;
+    box-shadow: none;
+    color: white;
+    font: 18px/30px "Helvetica",sans-serif;
+    padding: 0 10px;
+    text-align: left;
+}
+.panel-heading{
+    background-color: #f5f5f5;
+}
+.panel-heading a {
+   color: #648e80;
+    font-family: "Oswald",sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    margin-top: 2px;
+    text-align: center;
+    text-decoration: none;
+    /*text-transform: uppercase;*/
+    }
+
+
+/*Footer*/
+footer{
+  /*  text-align: center;*/
+    background: none repeat scroll 0 0 #343746;
+    padding: 22px 0;
+    width: 100%;
+}
+footer p{
+    text-align: center;
+    color: #8f8f8f;
+}
