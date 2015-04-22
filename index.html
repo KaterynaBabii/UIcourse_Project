@@ -11,34 +11,31 @@
 </head>
 <body id="home">
   <div class="wrap">
-    <header>
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+    <header class="navbar navbar-default fixed-navbar">
+      <div class="container">
           <div class="navbar-header">
-            <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <div class="navbar-header">Welcome to Lviv</div>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand logo" href="index.html">Welcome to Lviv</a>
           </div>
-          <div id="navbar" class="navbar-collapse collapse main-nav">
-              <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="#home">Львів</a></li>
-                <li><a href="#filterZaklady">Заклади</a></li>
-                <li><a href="#history">Історія</a></li>
-                <li><a href="#places">Особливі Місця</a></li>
-                <li><a href="#legend">Легенди</a></li>
+          <div class="collapse navbar-collapse">
+              <ul class="nav navbar-nav main-nav navbar-right">
+                  <li><a class="active" href="#home">Львів</a></li>
+                  <li><a href="#filterZaklady">Заклади</a></li>
+                  <li><a href="#history">Історія</a></li>
+                  <li><a href="#places">Особливі Місця</a></li>
+                  <li><a href="#legend">Легенди</a></li>
               </ul>
           </div>
-        </div>
-      </nav>
-    </header> 
-
-    <section class="slides">
+      </div>
+  </header>
+ <section class="slides">
         <div class="">
-          <div id="carousel-generic" class="carousel slide main-slider" data-ride="carousel">
+          <div id="carousel-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
@@ -48,30 +45,29 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active">
-                <img  class="slide_img" alt="Lviv Ukraine" src="img/lviv_ukraine1.png">
+                <img  class="slide_img" alt="Lviv Ukraine" src="img/lviv_carousel_1.png">
                 <div class="carousel-caption">
-                    <h3>Львів у UNESCO</h3>
-                    <p>Львів було прийнято до Світової спадщини ЮНЕСКО.</p>
+                    <h1>Львів у UNESCO</h1>
+                    <h4>Львів було прийнято до Світової спадщини ЮНЕСКО.</h4>
                 </div>
               </div>
               <div class="item">
-                <img  class="slide_img" alt="Lviv Ukraine" src="img/pl_rynokLviv.png">
+                <img  class="slide_img" alt="Lviv Ukraine" src="img/lviv_carousel_1.png">
                 <div class="carousel-caption">
-                    <h3>Львів у ТОП-10</h3>
-                    <p>У 2013 році видання Reuters опублікувало ТОП-10 європейських міст.</p>
+                    <h1>Львів у ТОП-10</h1>
+                    <h4>У 2013 році видання Reuters опублікувало ТОП-10 європейських міст.</h4>
                 </div>
               </div>
               <div class="item">
-                <img  class="slide_img" alt="Lviv Ukraine" src="img/ukraine_Lviv_Center.png">
+                <img  class="slide_img" alt="Lviv Ukraine" src="img/lviv_carousel_11.jpg">
                 <div class="carousel-caption">
-                    <h3>Нічний Львів</h3>
-                    <p>Безліч нічних екскурсій в яких кожен зможе відчути себе частинкою легенди</p>
+                    <h1>Нічний Львів</h1>
+                    <h4>Безліч нічних екскурсій в яких кожен зможе відчути себе частинкою легенди</h4>
                 </div>
               </div>
             </div>
         </div>
     </section>
-
     <section id="filterZaklady" class="filter_items">
       <div class="container">
         <div class="section-header">
@@ -84,142 +80,120 @@
               <div class="lvivItems-filter">
                 <ul id="filters">
                   <li>Найцікавіші заклади:</li>
-                  <li class="filter" data-filter="all">Всі</li>
-                  <li class="filter" data-filter="church">Храми</li>
-                  <li class="filter" data-filter="musem">Музеї</li>
-                   <li class="filter" data-filter="restaurant">Ресторани</li>
+                  <li><span class="filter active" data-filter="church musem icon restaurant">Всі</span></li>
+                  <li><span class="filter" data-filter="church">Храми</span></li>
+                  <li><span class="filter" data-filter="musem">Музеї</span></li>
+                  <li><span class="filter" data-filter="restaurant">Ресторани</span></li>
                 </ul>
               </div>
             </div>
             <div id="lvivItems"> 
-              <!--  -->
-              <div class="item col-sm-3 church">
+              <div class="item col-xs-6 col-md-3 church">
                 <div class="view view-tenth">
                   <img class="img-responsive" src="img/church_kafedralniysobor.png">
                   <div class="mask">
                     <h2>Латинський катедральний костел</h2>
-                    <p>Латинський катедральний костел – велична пам’ятка XIV-XVIII століть, у якій гармонійно поєднані архітектурні риси: готики, ренесансу й бароко.</p>
-                    <!-- <a href="" class="info">Read more</a> -->
+                    <p>Пам’ятка XIV-XVIII століть.</p>
                   </div>
                 </div>
               </div>
-              <!-- -->
-              <div class="item col-sm-3 restaurant">
+              <div class="item col-xs-6 col-md-3 restaurant">
                 <div class="view view-tenth">
                   <img class="img-responsive" src="img/Lvivska_Maisterni_Chocolates.png">
                   <div class="mask">
                     <h2>Львівська майстерня шоколаду</h2>
-                    <p>Львів ще з середньовіччя славився «добрим солодким», а вже у 19 столітті шоколад зі Львова експортувався до всієї Європи.</p>
-                    <!-- <a href="" class="info">Read more</a> -->
+                    <p>У 19 столітті шоколад зі Львова експортувався до всієї Європи.</p>
                   </div>
                 </div>
               </div>
-              <!--  -->
-              <div class="item col-sm-3 musem">
+              <div class="item col-xs-6 col-md-3 musem">
                 <div class="view view-tenth">
                   <img class="img-responsive" src="img/museum_apteka.png">
                   <div class="mask">
                     <h2>Аптека-музей "Під чорним орлом"</h2>
-                    <p>Аптека-музей «Під чорним орлом» була заснована у 1735 році, і це найдавніша з існуючих у Львові аптек</p>
-                    <!-- <a href="" class="info">Read more</a> -->
+                    <p>Найдавніша з існуючих у Львові аптек</p>
                   </div>
                 </div>
               </div>
-              <!-- -->
-              <div class="item col-sm-3 church">
+              <div class="item col-xs-6 col-md-3 church">
                 <div class="view view-tenth">
                   <img class="img-responsive" src="img/church_elazaveta.png">
                   <div class="mask">
                     <h2>Костел Святої Єлизавети</h2>
-                    <p>Церква святих Ольги і Єлизавети – прекрасна перлина львівської неготичної архітектури.</p>
-                    <!-- <a href="" class="info">Read more</a> -->
+                    <p>Церква святих Ольги і Єлизавети – перлина неготичної архітектури.</p>
                   </div>
                 </div>
               </div>
-              <!--  -->
-              <div class="item col-sm-3 restaurant">
+              <div class="item col-xs-6 col-md-3 restaurant">
                 <div class="view view-tenth">
                   <img class="img-responsive" src="img/restaurant_kryivka.png">
                   <div class="mask">
                     <h2>Криївка</h2>
-                    <p>У підвалах площі Ринок знаходиться кнайпа, стилізована під криївку Української повстанської армії. Але, щоб туди потрапити, потрібно знати гасло...</p>
-                    <!-- <a href="" class="info">Read more</a> -->
+                    <p>У підвалах площі Ринок знаходиться кнайпа, стилізована під криївку УПА.</p>
                   </div>
                 </div>
               </div>
-              <!--  -->
-              <div class="item col-sm-3 musem">
+              <div class="item col-xs-6 col-md-3 musem">
                 <div class="view view-tenth">
                   <img class="img-responsive" src="img/museum_arsenal.png">
                   <div class="mask">
                     <h2>Музей-Арсенал</h2>
                     <p>Відділ Львівського історичного музею</p>
-                    <!-- <a href="" class="info">Read more</a> -->
                   </div>
                 </div>
-              </div>
-              <!-- -->   
-              <div class="item col-sm-3 church">
+              </div>   
+              <div class="item col-xs-6 col-md-3 church">
                 <div class="view">
                   <img class="img-responsive" src="img/church_soborsvyatohoYura.png">
                   <div class="mask">
                     <h2>Cобор Святого Юра</h2>
-                    <p>Греко-католицький архикатедральний собор Святого Юра – величний рококовий архітектурний ансамбль XVIII століття домінує на високому узгір'ї над Львовом.</p>
+                    <p>Греко-католицький архикатедральний собор Святого Юра.</p>
                   </div>
                 </div>
               </div>
-              <!--  -->
-             <div class="item col-sm-3 musem">
+             <div class="item col-xs-6 col-md-3 musem">
                 <div class="view">
                   <img class="img-responsive" src="img/shevchenk_gai.png">
                   <div class="mask">
                     <h2>Шевченківський гай</h2>
-                    <p>Музей народної архітектури та побуту у Львові - це музей під відкритим небом, де можна ознайомитись з побутом українців.</p>
+                    <p>Це музей під відкритим небом, де можна ознайомитись з побутом українців.</p>
                   </div>
                 </div>
               </div>
-              <!-- -->
-              <div class="item col-sm-3 restaurant">
+              <div class="item col-xs-6 col-md-3 restaurant">
                 <div class="view view-tenth">
                   <img class="img-responsive" src="img/restaurant_blackkoffee.png">
                   <div class="mask">
                     <h2>Ресторація «Black Coffee»</h2>
-                    <p>Ресторація «Black Coffee» пропонує Вам поринути у витончений смак кавових напоїв, ласощів і страв європейської та української кухні.</p>
-                    <!-- <a href="" class="info">Read more</a> -->
+                    <p>Витончений смак європейської та української кухні.</p>
                   </div>
                 </div>
               </div>
-              <!--  -->
-              <div class="item col-sm-3 church">
+              <div class="item col-xs-6 col-md-3 church">
                 <div class="view">
                   <img src="img/church_virmens_sobor.png">
                   <div class="mask">
-                    <h2>Вірменський катедральний собор</h2>
-                    <p>Це унікальна пам’ятка східної культури на європейських теренах.<!--  Досконале поєднання архітектури вірменських святинь, романсько-готичного стилю Західної Європи і староукраїнського галицького зодчества. --></p>
+                    <h2>Вірменський собор</h2>
+                    <p>Це унікальна пам’ятка східної культури на європейських теренах.</p>
                   </div>
                 </div>
               </div>
-              <!--  -->
-              <div class="item col-sm-3 musem">
+              <div class="item col-xs-6 col-md-3 musem">
                 <div class="view view-tenth">
                   <img class="img-responsive" src="img/museum_beer.png">
                   <div class="mask">
                     <h2>Музей пивоваріння</h2>
-                    <p>Львівський музей пивоваріння — перший в Україні музей пивоваріння, що був відкритий 14 жовтня 2005.</p>
-                    <!-- <a href="" class="info">Read more</a> -->
+                    <p>Перший в Україні музей пивоваріння, що був відкритий 14 жовтня 2005.</p>
                   </div>
                 </div>
-              </div>
-              <!-- -->   
+              </div>   
             </div>
           </div>
         </div>
       </div>
     </section>
-    
     <section id="history">
-      <!-- div class="container"> -->
-        <div class="section-header">
+      <div class="section-header">
           <div class="container">
             <h1><span>Про Львів та його історію</span></h1>
             <div class="header-desc"><span> Краса, що перемогла час</span></div>
@@ -229,29 +203,40 @@
             <p>Львівський центр міста з його чітким поділом на національні дільниці виявився горнилом, в якому сформувалося унікальне мультикультурне середовище.</p>
             <p>Недарма як в Україні, так і в Польщі Львів також називають П'ємонтом - містом непокірним і волелюбним. У середині ХIХ століття Львів став центром Гаскали - єврейського просвітництва. Як відомо, найцікавіші явища завжди виникають на стику культур, а Львів ніколи не міг поскаржитися на брак відомих людей, що створювали видатні твори мистецтва, техніки, засновували культурні, господарські, економічні, спортивні товариства. </p>
           </div>
-        </div>
-        <div class="section-content">
-          <div class="row ">
-            <div id="historyLviv" class="parallax">
-              <div class="container">
-                <h2>Some interesting text,interesting text</h2>
-                <h2>Some interesting text,interesting text</h2>
-                <h2>Some interesting text,interesting text</h2>
-                <h2>Some interesting text,interesting text</h2>
-                <h2>Some interesting text,interesting text</h2>
-                <h2>Some interesting text,interesting text</h2>
-                <h2>Some interesting text,interesting text</h2>
-              </div>
+      </div>
+      <div class="section-content">
+        <div class="row ">
+          <div id="historyLviv" class="parallax">              
+              <div class="container">   
+                <div class="col-sm-12">
+                  <div class="old_history">
+                     <h2>Старовинний Львів</h2>
+                  </div>
+                </div>
+                <div class="lviv_old"> 
+                  <div class="col-sm-3 wow fadeInLeftBig animated" data-wow-delay="700ms" data-wow-duration="1000ms">
+                    <img class="img-lviv_old" src="img/images.jpg">
+                    </div>
+                  </div>            
+                  <div class="col-sm-3 wow fadeInLeftBig animated" data-wow-delay="500ms" data-wow-duration="1000ms">
+                    <img class="img-lviv_old" src="img/images1.jpg">
+                    </div>                  
+                  <div class="col-sm-3 wow fadeInRightBig animated" data-wow-delay="500ms" data-wow-duration="1000ms">
+                    <img class="img-lviv_old" src="img/images.jpg">
+                  </div>                  
+                  <div class="col-sm-3 wow fadeInRightBig animated" data-wow-delay="700ms" data-wow-duration="1000ms">
+                    <img class="img-lviv_old" src="img/images1.jpg">
+                  </div>
+                </div>
+              </div>  
             </div>
           </div>
-        </div>
       </div>
     </section>
-
     <section id="places">
       <div class="container">
         <div class="section-header">
-          <h1><span>Особливості місця</span></h1>
+          <h1><span>Особливі місця</span></h1>
           <div class="header-desc"><span>Топ 10 місць, які треба відвідати у Львові</span></div>
         </div>
       </div>
@@ -419,7 +404,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-sm-12">
-            <p>Footer interesting text</p>
+            <p>Designed and Developed by Kateryna Babii</p>
           </div>
           
         </div>
